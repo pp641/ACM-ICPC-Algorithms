@@ -34,7 +34,25 @@ int main()
             factorization = factorization / i;
         };
     }
+  
+  
+    
     
     return 0;
 }
-
+//method 2
+     /*
+     
+     cout<<1<<endl;                                                  --k1
+    for(i=2;i< sqrt(enteredNumber);i++)                             -- k2
+    {
+        if(enteredNumber%i==0)
+            cout<<i<<endl<<enteredNumber/i<<endl;                    --k3
+    }                                                                --k4
+    cout<<num;
+    */
+//k1-as 1 is factor of every number
+//k2- we will run the loop only till square root of n
+ //k3- all the factors are covered by i and the remaining are covered by n/i, because if x=a*b, then x has one factor a and another factor b=x/a;
+// k4-this will reduce complexity by n to root(n);
+//n is also a factor of every number
